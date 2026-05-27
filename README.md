@@ -1,0 +1,120 @@
+# ذكاء عملي (Practical AI)
+
+## 🎯 نظرة عامة على المشروع
+**النوع**: موقع ويب تعليمي عربي متخصص في التطبيقات العملية للذكاء الاصطناعي  
+**الإطار التقني**: Next.js 16.0.7 (React 19.2.0)  
+
+منصة تهدف إلى تقديم الذكاء الاصطناعي بشكل عملي ومباشر للمحترفين ورواد الأعمال، بعيداً عن التنظير.
+
+---
+
+## 🏗️ البنية التقنية
+
+### **التكنولوجيا الأساسية**
+- **Frontend Framework**: Next.js 16 (App Router)
+- **اللغة**: TypeScript 5
+- **UI Library**: React 19.2.0
+- **التصميم**: Tailwind CSS 4
+- **الأيقونات**: Lucide React
+- **الرسوم المتحركة**: Framer Motion
+- **إدارة الحالة**: React Hooks
+- **Theme**: next-themes (وضع داكن/فاتح)
+
+---
+
+## 📁 هيكل المشروع
+
+```
+/src
+├── /app (15 صفحة)
+│   ├── page.tsx (الصفحة الرئيسية)
+│   ├── /blog (مدونة + صفحات ديناميكية)
+│   ├── /tools (صفحة الأدوات)
+│   ├── /glossary (قاموس المصطلحات)
+│   ├── /guides (أدلة إرشادية)
+│   ├── /products (صفحة المنتجات)
+│   ├── /resources (موارد مجانية)
+│   ├── /about (صفحة من نحن)
+│
+├── /components (15 مكوّن)
+│   ├── /layout (Header, Footer, Mobile Menu)
+│   ├── /blog (BlogList)
+│   ├── /ui (Button, Card, Badge, Motion, etc.)
+│   ├── /tools (ToolsBrowser)
+│
+├── /lib
+│   ├── data.ts (قاعدة بيانات المحتوى)
+│   ├── utils.ts (وظائف مساعدة)
+```
+
+---
+
+## 🎨 الميزات والوظائف
+
+1. **المحتوى الثري**:
+   - مدونة كاملة بنظام صفحات ديناميكي.
+   - قاموس مصطلحات AI.
+   - دليل الأدوات مع وصف تفصيلي.
+   - موارد مجانية وأدلة إرشادية.
+
+2. **تصميم احترافي**:
+   - Responsive Design.
+   - Dark Mode.
+   - Motion Animations.
+   - Modern UI Components.
+
+3. **تحسين محركات البحث (SEO)**:
+   - Metadata API الشامل.
+   - Open Graph Tags.
+   - Sitemap.xml (ديناميكي).
+   - Structured Data (Schema.org).
+
+4. **الأداء**:
+   - Image Optimization (AVIF, WebP).
+   - Static Site Generation (SSG).
+   - Server-Side Rendering (SSR).
+
+---
+
+## 🚀 التشغيل (Setup)
+
+تأكد من تثبيت Node.js (v18+).
+
+```bash
+# تثبيت التبعيات
+npm install
+
+# تشغيل خادم التطوير
+npm run dev
+
+# بناء المشروع للإنتاج
+npm run build
+
+# التشغيل
+npm start
+```
+
+---
+
+## 🔍 التبعيات الرئيسية
+
+```json
+"dependencies": {
+  "next": "16.0.7",
+  "react": "19.2.0",
+  "framer-motion": "12.23.25",
+  "lucide-react": "0.556.0",
+  "next-themes": "0.4.6",
+  "sonner": "2.0.7"
+}
+```
+
+---
+
+## 🔗 روابط خارجية
+- **أيقونات**: Lucide React
+- **صور**: Unsplash / Dicebear API
+
+---
+
+*تم التوثيق بتاريخ: ديسمبر 2025*

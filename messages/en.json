@@ -1,0 +1,87 @@
+{
+    "common": {
+        "name": "Atheer",
+        "nameEn": "AIR",
+        "tagline": "Arab Intelligence Repository",
+        "description": "Arab Intelligence Repository - A comprehensive platform for systems, tools, and knowledge in AI",
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "tryAgain": "Try Again",
+        "readMore": "Read More",
+        "learnMore": "Learn More",
+        "getStarted": "Get Started",
+        "viewAll": "View All",
+        "backToHome": "Back to Home",
+        "notFound": "Page Not Found"
+    },
+    "nav": {
+        "blog": "Tech Blog",
+        "systems": "Ready Systems",
+        "creators": "Creators Directory",
+        "tools": "Tools Directory",
+        "consultancy": "Consultancy & Models",
+        "about": "About Us",
+        "home": "Home"
+    },
+    "footer": {
+        "quickLinks": "Quick Links",
+        "contactUs": "Contact Us",
+        "allContactLinks": "All Contact Links",
+        "mediaKit": "Media Kit",
+        "privacyPolicy": "Privacy Policy",
+        "terms": "Terms & Conditions",
+        "allRightsReserved": "All rights reserved"
+    },
+    "home": {
+        "title": "Arab Intelligence Repository",
+        "subtitle": "You won't learn AI here.. you will use it",
+        "description": "Proven systems that make AI work for you instead of thinking about it",
+        "featuredSystems": "Featured Systems",
+        "latestArticles": "Latest Articles",
+        "popularTools": "Popular Tools"
+    },
+    "blog": {
+        "title": "Tech Blog",
+        "search": "Search articles...",
+        "noResults": "No articles found",
+        "readTime": "min read",
+        "publishedOn": "Published on",
+        "categories": "Categories",
+        "allCategories": "All Categories"
+    },
+    "systems": {
+        "title": "Ready Systems",
+        "description": "Practical AI systems you can implement today",
+        "viewSystem": "View System",
+        "difficulty": "Difficulty",
+        "timeToImplement": "Time to Implement"
+    },
+    "tools": {
+        "title": "Tools Directory",
+        "description": "Curated collection of AI tools and resources",
+        "category": "Category",
+        "pricing": "Pricing",
+        "free": "Free",
+        "paid": "Paid",
+        "freemium": "Freemium"
+    },
+    "creators": {
+        "title": "Creators Directory",
+        "description": "Arab AI creators and thought leaders",
+        "follow": "Follow",
+        "website": "Website",
+        "expertise": "Expertise"
+    },
+    "consultancy": {
+        "title": "Consultancy & Models",
+        "description": "Professional AI consulting and custom models",
+        "contactUs": "Contact Us",
+        "getQuote": "Get Quote"
+    },
+    "about": {
+        "title": "About Us",
+        "mission": "Our Mission",
+        "vision": "Our Vision",
+        "team": "Our Team"
+    }
+}
