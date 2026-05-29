@@ -44,8 +44,8 @@ export default async function AboutPage({ params }: PageProps) {
         "mainEntity": {
             "@type": "Organization",
             "name": isAr ? "ذكاء عملي" : "Zakaa Amaly",
-            "url": `https://arabic-ai-blog.vercel.app/${locale}`,
-            "logo": "https://arabic-ai-blog.vercel.app/logo.png",
+            "url": `https://ahmedissamramadan.github.io/AIR/${locale}`,
+            "logo": "https://ahmedissamramadan.github.io/AIR/logo.png",
             "sameAs": [
                 "https://x.com/zakaa_ai",
                 "https://linkedin.com/company/zakaa-ai"

@@ -5,7 +5,7 @@ export const SITE_CONFIG = {
     tagline: 'Arab Intelligence Repository',
     description: 'مستودع الذكاء العربي - منصة شاملة للأنظمة والأدوات والمعرفة في مجال الذكاء الاصطناعي',
     descriptionEn: 'Arab Intelligence Repository - A comprehensive platform for systems, tools, and knowledge in the field of AI',
-    url: 'https://arabic-ai-blog.vercel.app',
+    url: 'https://ahmedissamramadan.github.io/AIR',
     author: 'Ahmed Esam',
     twitterHandle: '@zakaa_ai',
     email: 'hello@zakaa.ai',

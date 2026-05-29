@@ -71,7 +71,7 @@ export default async function SystemPage({ params }: { params: Promise<{ slug: s
             "name": "ذكاء عملي",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://arabic-ai-blog.vercel.app/logo.png"
+                "url": "https://ahmedissamramadan.github.io/AIR/logo.png"
             }
         }
     };

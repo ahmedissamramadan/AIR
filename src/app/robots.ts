@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
                 '/*?q=', // Disallow internal search query strings to prevent thin content indexing
             ],
         },
-        sitemap: 'https://ahmdesam96.github.io/sitemap.xml', // TODO: Update this to Vercel URL
+        sitemap: 'https://ahmedissamramadan.github.io/AIR/sitemap.xml',
     };
 }

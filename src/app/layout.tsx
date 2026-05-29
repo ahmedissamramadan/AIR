@@ -28,7 +28,7 @@ export default async function RootLayout({
                             "inLanguage": locale,
                             "potentialAction": {
                                 "@type": "SearchAction",
-                                "target": `https://arabic-ai-blog.vercel.app/${locale}/blog?search={search_term_string}`,
+                                "target": `${SITE_CONFIG.url}/${locale}/blog?search={search_term_string}`,
                                 "query-input": "required name=search_term_string"
                             }
                         })

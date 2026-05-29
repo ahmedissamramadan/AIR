@@ -85,19 +85,19 @@ export default async function BlogPostPage({ params }: PageProps) {
             "@type": "Person",
             name: authorName,
             jobTitle: authorRole,
-            url: `https://arabic-ai-blog.vercel.app/author/${authorName}` // Placeholder
+            url: `https://ahmedissamramadan.github.io/AIR/author/${authorName}` // Placeholder
         }],
         publisher: {
             "@type": "Organization",
             "name": locale === 'ar' ? "ذكاء عملي" : "Zakaa Amaly",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://arabic-ai-blog.vercel.app/logo.png"
+                "url": "https://ahmedissamramadan.github.io/AIR/logo.png"
             }
         },
         mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": `https://arabic-ai-blog.vercel.app/${locale}/blog/${post.slug}`
+            "@id": `https://ahmedissamramadan.github.io/AIR/${locale}/blog/${post.slug}`
         }
     };
 
