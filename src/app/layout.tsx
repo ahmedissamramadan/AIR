@@ -1,13 +1,13 @@
 import "./globals.css";
 import { SITE_CONFIG } from "@/lib/constants";
-import { getLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
 export default async function RootLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
-    const locale = await getLocale();
+    const locale = routing.defaultLocale;
     const isAr = locale === 'ar';
 
     return (

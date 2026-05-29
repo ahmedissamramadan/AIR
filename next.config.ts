@@ -12,8 +12,6 @@ const nextConfig: NextConfig = {
     formats: ['image/avif', 'image/webp'],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    // Add quality 80 to supported qualities
-    qualities: [75, 80, 90],
     remotePatterns: [
       {
         protocol: 'https',

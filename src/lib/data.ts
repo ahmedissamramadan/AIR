@@ -4,7 +4,8 @@ export function getLocalizedContent(content: LocalizableString | undefined | nul
     if (!content) return '';
     if (typeof content === 'string') return content;
     const l = locale as 'ar' | 'en';
-    return (content as any)[l] || (content as any).en || '';
+    const obj = content as { ar?: string; en?: string };
+    return obj[l] || obj.en || '';
 }
 
 export interface Author {

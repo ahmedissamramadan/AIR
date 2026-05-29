@@ -9,7 +9,7 @@ import { CommandPalette } from "@/components/ui/CommandPalette";
 import { AuthProvider } from "@/components/auth/AuthProvider";
 import { SITE_CONFIG } from "@/lib/constants";
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 
 interface PageProps {
   children: React.ReactNode;
@@ -78,7 +78,8 @@ export default async function LocaleLayout({
   params,
 }: PageProps) {
   const { locale } = await params;
-  const messages = await getMessages();
+  setRequestLocale(locale);
+  const messages = await getMessages({ locale });
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>

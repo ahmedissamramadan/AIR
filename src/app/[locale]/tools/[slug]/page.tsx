@@ -9,16 +9,13 @@ import { RichContent } from "@/components/RichContent";
 
 
 export async function generateStaticParams() {
-    return ['en', 'ar'].flatMap((locale) =>
-        tools.map((tool) => ({
-            locale,
-            slug: tool.slug,
-        }))
-    );
+    return tools.map((tool) => ({
+        slug: tool.slug,
+    }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string; locale: string } }) {
-    const { slug, locale } = params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string; locale: string }> }) {
+    const { slug, locale } = await params;
     const decodedSlug = decodeURIComponent(slug);
     const tool = tools.find((t) => t.slug === decodedSlug);
     if (!tool) return { title: 'أداة غير موجودة' };
@@ -38,8 +35,8 @@ export async function generateMetadata({ params }: { params: { slug: string; loc
     };
 }
 
-export default async function ToolDetailPage({ params }: { params: { slug: string; locale: string } }) {
-    const { slug, locale } = params;
+export default async function ToolDetailPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {
+    const { slug, locale } = await params;
     const decodedSlug = decodeURIComponent(slug);
     const tool = tools.find((t) => t.slug === decodedSlug);
 

@@ -16,10 +16,9 @@ interface PageProps {
 import { getLocalizedContent } from "@/lib/data";
 
 export function generateStaticParams() {
-    return courses.flatMap((course) => [
-        { slug: course.slug, locale: 'ar' },
-        { slug: course.slug, locale: 'en' }
-    ]);
+    return courses.map((course) => ({
+        slug: course.slug,
+    }));
 }
 
 export default async function CourseDetailPage({ params }: PageProps) {

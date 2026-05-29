@@ -29,10 +29,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 // Generate Static Params
 export async function generateStaticParams() {
-    return creators.flatMap((creator) => [
-        { slug: creator.slug, locale: 'ar' },
-        { slug: creator.slug, locale: 'en' }
-    ]);
+    return creators.map((creator) => ({
+        slug: creator.slug,
+    }));
 }
 
 const PlatformIcons: Record<string, LucideIcon> = {

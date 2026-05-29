@@ -9,13 +9,14 @@ export function generateStaticParams() {
 }
 
 interface DemoPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function DemoPage({ params }: DemoPageProps) {
-  const demo = demos.find((d) => d.slug === params.slug);
+export default async function DemoPage({ params }: DemoPageProps) {
+  const { slug } = await params;
+  const demo = demos.find((d) => d.slug === slug);
 
   if (!demo) {
     notFound();
